@@ -1,8 +1,183 @@
-*{
-    margin: 0 auto;
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    /* Cor do texto */
+    background-color: #f8f8f8;
+    /* Cor de fundo da página */
 }
 
-h1{
-    background-color: red;
-    color: black;
+header {
+    display: flex;
+    /* Usar flexbox para o layout */
+    justify-content: space-between;
+    /* Espaça os itens ao longo do cabeçalho */
+    align-items: center;
+    /* Alinha itens verticalmente ao centro */
+    padding: 20px;
+    /* Espaçamento interno do cabeçalho */
+    background-color: #0073e6;
+    /* Cor de fundo do cabeçalho */
+    color: white;
+    /* Cor do texto no cabeçalho */
+}
+
+#logo {
+    max-width: 75px;
+    /* Tamanho máximo da logo */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+h1,
+p {
+    margin: 10px 0;
+    /* Margem entre o título e a descrição */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+h1 {
+    margin-top: 10px;
+    /* Espaçamento acima do título */
+}
+
+nav {
+    margin-left: auto;
+    /* Empurra o menu para a direita */
+}
+
+nav ul {
+    list-style: none;
+    /* Remove marcadores da lista */
+    padding: 0;
+    /* Remove padding */
+    display: flex;
+    /* Coloca os itens em linha */
+}
+
+nav ul li a {
+    color: white;
+    /* Cor dos links */
+    text-decoration: none;
+    /* Remove sublinhado dos links */
+    padding: 5px 15px;
+    /* Adiciona espaçamento interno ao link */
+    display: inline-block;
+    /* Garante que o padding tenha efeito */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    /* Sublinhado ao passar o mouse */
+}
+
+
+section {
+    text-align: center;
+    /* Centraliza o texto das seções */
+    padding: 20px;
+    /* Espaçamento interno das seções */
+    margin: 20px auto;
+    /* Margem automática para centralizar */
+    background: white;
+    /* Cor de fundo das seções */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+h2 {
+    color: #0073e6;
+    /* Cor dos títulos das seções */
+}
+
+.service {
+    margin-bottom: 20px;
+    /* Espaçamento entre os serviços */
+}
+
+blockquote {
+    background: #f0f0f0;
+    /* Fundo dos depoimentos */
+    border-left: 5px solid #0073e6;
+    /* Bordas do bloco */
+    padding: 10px;
+    /* Espaçamento interno do bloco */
+    margin: 10px 0;
+    /* Margem vertical */
+}
+
+footer {
+    text-align: center;
+    /* Centraliza o texto do rodapé */
+    padding: 10px 0;
+    /* Espaçamento interno do rodapé */
+    background-color: #0073e6;
+    /* Cor de fundo do rodapé */
+    color: white;
+    /* Cor do texto no rodapé */
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+
+    /* Para tablets */
+    header {
+        padding: 15px;
+        /* Ajusta o padding do cabeçalho */
+    }
+
+    #logo {
+        max-width: 65px;
+        /* Tamanho da logo para tablets */
+    }
+
+    h1 {
+        font-size: 1.8em;
+        /* Tamanho da fonte do título para tablets */
+    }
+
+    p {
+        font-size: 1em;
+        /* Tamanho da fonte do parágrafo para tablets */
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Para dispositivos móveis */
+    header {
+        padding: 2px;
+        /* Reduz o padding do cabeçalho */
+    }
+
+    #logo {
+        max-width: 60px;
+        /* Aumenta um pouco o tamanho da logo */
+        height: auto;
+        /* Mantém a proporção */
+    }
+
+    h1 {
+        font-size: 1.5em;
+        /* Tamanho da fonte do título */
+    }
+
+    p {
+        font-size: 0.9em;
+        /* Tamanho da fonte do parágrafo */
+    }
+
+    nav ul li {
+        display: block;
+        /* Links em coluna em telas menores */
+        margin: 10px 0;
+        /* Espaçamento vertical */
+    }
 }
