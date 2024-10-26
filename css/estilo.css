@@ -20,6 +20,15 @@ header {
     align-items: center;
     padding: 25px;
     background-color: #ffffff;
+    width: 100%;
+}
+
+.header-content {
+    max-width: 850px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 #logo {
@@ -34,7 +43,7 @@ p {
 }
 
 nav {
-    margin-left: auto;
+    margin-left: 2rem;
 }
 
 nav ul {
@@ -167,12 +176,6 @@ section img {
 
 .checklist li p {
     margin-top: 5px;
-}
-
-.vantagem {
-    flex: 1;
-    padding: 10px;
-    color: white;
 }
 
 /* Funcionalidades */
