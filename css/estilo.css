@@ -1,183 +1,261 @@
 /* Estilos Gerais */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    /* Fonte padrão */
+    font-size: 18px;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
-    /* Cor do texto */
     background-color: #f8f8f8;
-    /* Cor de fundo da página */
 }
 
+/* Cabeçalho */
 header {
     display: flex;
-    /* Usar flexbox para o layout */
     justify-content: space-between;
-    /* Espaça os itens ao longo do cabeçalho */
     align-items: center;
-    /* Alinha itens verticalmente ao centro */
-    padding: 20px;
-    /* Espaçamento interno do cabeçalho */
-    background-color: #0073e6;
-    /* Cor de fundo do cabeçalho */
-    color: white;
-    /* Cor do texto no cabeçalho */
+    padding: 25px;
+    background-color: #ffffff;
 }
 
 #logo {
     max-width: 75px;
-    /* Tamanho máximo da logo */
     height: auto;
-    /* Mantém a proporção da imagem */
 }
 
 h1,
 p {
     margin: 10px 0;
-    /* Margem entre o título e a descrição */
     text-align: center;
-    /* Centraliza o texto */
-}
-
-h1 {
-    margin-top: 10px;
-    /* Espaçamento acima do título */
 }
 
 nav {
     margin-left: auto;
-    /* Empurra o menu para a direita */
 }
 
 nav ul {
     list-style: none;
-    /* Remove marcadores da lista */
     padding: 0;
-    /* Remove padding */
     display: flex;
-    /* Coloca os itens em linha */
+    gap: 15px;
 }
 
 nav ul li a {
-    color: white;
-    /* Cor dos links */
+    color: #333;
     text-decoration: none;
-    /* Remove sublinhado dos links */
     padding: 5px 15px;
-    /* Adiciona espaçamento interno ao link */
     display: inline-block;
-    /* Garante que o padding tenha efeito */
 }
 
 nav ul li a:hover {
     text-decoration: underline;
-    /* Sublinhado ao passar o mouse */
 }
 
-
+/* Seções */
 section {
-    text-align: center;
-    /* Centraliza o texto das seções */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    /* Espaçamento interno das seções */
     margin: 20px auto;
-    /* Margem automática para centralizar */
-    background: white;
-    /* Cor de fundo das seções */
+    background: #999999;
     border-radius: 5px;
-    /* Bordas arredondadas */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
+    max-width: 850px;
+    width: 100%;
+    color: white;
 }
 
-h2 {
-    color: #0073e6;
-    /* Cor dos títulos das seções */
+section h2 {
+    margin-bottom: 10px;
 }
 
-.service {
+section p {
     margin-bottom: 20px;
-    /* Espaçamento entre os serviços */
 }
 
-blockquote {
-    background: #f0f0f0;
-    /* Fundo dos depoimentos */
-    border-left: 5px solid #0073e6;
-    /* Bordas do bloco */
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.quadros {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.quadro {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.quadro h3 {
+    margin: 0;
+    text-align: left;
+    color: #333;
+}
+
+.quadro ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.quadro li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Checklist */
+.checklist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.checklist ul {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    list-style-type: none;
+}
+
+.checklist ul li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    position: relative;
+}
+
+/*
+.checklist ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: red;
+}
+*/
+
+.checklist li {
+    width: calc(50% - 10px);
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.checklist li h3 {
+    margin: 0;
+}
+
+.checklist li p {
+    margin-top: 5px;
+}
+
+.vantagem {
+    flex: 1;
     padding: 10px;
-    /* Espaçamento interno do bloco */
-    margin: 10px 0;
-    /* Margem vertical */
+    color: white;
 }
 
+/* Funcionalidades */
+.funcionalidade-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.funcionalidade {
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 10px);
+    padding: 15px;
+}
+
+.funcionalidade h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Rodapé */
 footer {
     text-align: center;
-    /* Centraliza o texto do rodapé */
     padding: 10px 0;
-    /* Espaçamento interno do rodapé */
-    background-color: #0073e6;
-    /* Cor de fundo do rodapé */
+    background-color: #999999;
     color: white;
-    /* Cor do texto no rodapé */
 }
 
 /* Responsividade */
 @media (max-width: 900px) {
-
-    /* Para tablets */
     header {
-        padding: 15px;
-        /* Ajusta o padding do cabeçalho */
+        padding: 20px;
     }
 
     #logo {
         max-width: 65px;
-        /* Tamanho da logo para tablets */
     }
 
     h1 {
         font-size: 1.8em;
-        /* Tamanho da fonte do título para tablets */
     }
 
-    p {
-        font-size: 1em;
-        /* Tamanho da fonte do parágrafo para tablets */
+    section {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .quadro {
+        width: 50%;
+    }
+
+    .funcionalidade {
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
 @media (max-width: 600px) {
-
-    /* Para dispositivos móveis */
     header {
-        padding: 2px;
-        /* Reduz o padding do cabeçalho */
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
     }
 
     #logo {
         max-width: 60px;
-        /* Aumenta um pouco o tamanho da logo */
-        height: auto;
-        /* Mantém a proporção */
     }
 
     h1 {
         font-size: 1.5em;
-        /* Tamanho da fonte do título */
     }
 
-    p {
-        font-size: 0.9em;
-        /* Tamanho da fonte do parágrafo */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
-    nav ul li {
-        display: block;
-        /* Links em coluna em telas menores */
-        margin: 10px 0;
-        /* Espaçamento vertical */
+    section {
+        padding: 10px;
     }
 }
