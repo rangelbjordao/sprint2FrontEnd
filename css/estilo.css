@@ -78,6 +78,7 @@ section {
     max-width: 850px;
     width: 100%;
     color: white;
+    text-align: center;
 }
 
 section h2 {
@@ -213,6 +214,33 @@ footer {
     background-color: #999999;
     color: white;
 }
+
+#integrantes {
+    text-align: center;
+}
+
+.foto-integrante {
+    aspect-ratio: 1/1;
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linkedin-icon i {
+    font-size: 48px;
+    color: #0A66C2;
+    /* Azul oficial do LinkedIn */
+    transition: color 0.3s;
+}
+
+.linkedin-icon i:hover {
+    color: #004182;
+    /* Escurece ao passar o mouse */
+}
+
 
 /* Responsividade */
 @media (max-width: 900px) {
