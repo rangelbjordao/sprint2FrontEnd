@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Evento</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="header-content">
+            <a href="ccr-alertas.html"><img src="imagens/logo-ccr.png" alt="Logo da CCR" id="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="ccr-alertas.html">Voltar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Título principal -->
+    <main>
+        <h1>Reportar Evento</h1>
+
+        <!-- Formulário para reportar evento -->
+        <section>
+            <form id="report-form">
+                <label for="event-title">Título do Evento:</label>
+                <input type="text" id="event-title" name="event-title" required>
+
+                <label for="event-description">Descrição do Evento:</label>
+                <textarea id="event-description" name="event-description" required></textarea>
+
+                <label for="event-date">Data do Evento:</label>
+                <input type="date" id="event-date" name="event-date" required>
+
+                <button type="submit" class="func-button">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
