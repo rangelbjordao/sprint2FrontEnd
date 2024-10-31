@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,8 +39,8 @@
                 </div>
 
                 <div class="grupo-formulario">
-                    <label for="event-date">Data do Evento:</label>
-                    <input type="date" id="event-date" name="event-date" required>
+                    <label for="event-date">Data do Evento (dd/mm/aaaa):</label>
+                    <input type="text" id="event-date" name="event-date" required placeholder="dd/mm/aaaa">
                 </div>
 
                 <button type="submit">Enviar</button>
@@ -51,5 +52,9 @@
     <footer>
         <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Script para a máscara de entrada -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
