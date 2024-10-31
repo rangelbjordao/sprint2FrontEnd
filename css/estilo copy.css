@@ -174,7 +174,7 @@ section img {
     margin-top: 5px;
 }
 
-/* Vantagens e Funcionalidades */
+/* Vantagens e Funcionalidades*/
 #vantagens,
 #funcionalidades {
     display: flex;
@@ -251,6 +251,7 @@ button:hover {
     border-color: #555;
 }
 
+
 .evento {
     background-color: white;
     color: #333;
@@ -283,30 +284,44 @@ label {
     margin-bottom: 5px;
 }
 
-/* Estilos de borda comuns */
-
 select,
 textarea {
     padding: 10px;
     font-size: 16px;
-    width: 300px;
-    resize: none;
+    border: 1px solid #ccc;
+    /* Borda padrão */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
 }
 
 textarea {
     height: 150px;
+    width: 300px;
+    resize: none;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Botões de função */
 .botao-funcao {
     background-color: #B22222;
+    /* Cor de fundo do botão */
     color: white;
+    /* Cor do texto do botão */
     transition: background-color 0.3s;
+    /* Efeito de transição ao passar o mouse */
 }
 
 .botao-funcao:hover {
     background-color: #8B0000;
+    /* Cor do botão ao passar o mouse */
 }
+
+
 
 /* Responsividade */
 @media (max-width: 900px) {
