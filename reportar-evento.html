@@ -12,7 +12,9 @@
     <!-- Cabeçalho da página -->
     <header>
         <div class="header-content">
-            <a href="ccr-alertas.html"><img src="imagens/logo-ccr.png" alt="Logo da CCR" id="logo"></a>
+            <a href="ccr-alertas.html" aria-label="Voltar para CCR Alertas">
+                <img src="imagens/logo-ccr.png" alt="Logo da CCR - link para CCR Alertas" id="logo">
+            </a>
             <nav>
                 <ul>
                     <li><a href="ccr-alertas.html">Voltar</a></li>
@@ -29,18 +31,18 @@
         <section>
             <form id="formulario-reportar-evento">
                 <div class="grupo-formulario">
-                    <label for="event-title">Título do Evento:</label>
-                    <input type="text" id="event-title" name="event-title" required>
+                    <label for="titulo-evento">Título do Evento:</label>
+                    <input type="text" id="titulo-evento" name="titulo-evento" required>
                 </div>
 
                 <div class="grupo-formulario">
-                    <label for="event-description">Descrição do Evento:</label>
-                    <textarea id="event-description" name="event-description" required></textarea>
+                    <label for="descricao evento">Descrição do Evento:</label>
+                    <textarea id="descricao evento" name="descricao evento" required></textarea>
                 </div>
 
                 <div class="grupo-formulario">
-                    <label for="event-date">Data do Evento (dd/mm/aaaa):</label>
-                    <input type="text" id="event-date" name="event-date" required placeholder="dd/mm/aaaa">
+                    <label for="data-evento">Data do Evento (dd/mm/aaaa):</label>
+                    <input type="text" id="data-evento" name="data-evento" required placeholder="dd/mm/aaaa">
                 </div>
 
                 <button type="submit">Enviar</button>
@@ -53,7 +55,7 @@
         <p>&copy; 2024 CCR</p>
     </footer>
 
-    <!-- Script para a máscara de entrada -->
+    <!-- Script formatacao data -->
     <script src="js/script.js"></script>
 </body>
 

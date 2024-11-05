@@ -12,7 +12,9 @@
     <!-- Cabeçalho da página -->
     <header>
         <div class="header-content">
-            <a href="ccr-alertas.html"><img src="imagens/logo-ccr.png" alt="Logo da CCR" id="logo"></a>
+            <a href="ccr-alertas.html" aria-label="Voltar para CCR Alertas">
+                <img src="imagens/logo-ccr.png" alt="Logo da CCR - link para CCR Alertas" id="logo">
+            </a>
             <nav>
                 <ul>
                     <li><a href="ccr-alertas.html">Voltar</a></li>
@@ -25,16 +27,15 @@
     <main>
         <h1>Solicitar Ajuda</h1>
 
-        <!-- Seção para solicitar ajuda em eventos abertos -->
+        <!-- Seção solicitar ajuda -->
         <section>
             <form id="formulario-solicitar-ajuda">
                 <div class="grupo-formulario">
-                    <label for="evento-selecionar">Selecione um Evento em Aberto:</label>
-                    <select id="evento-selecionar" name="evento-selecionar" required>
+                    <label for="selecionar-evento">Selecione um Evento em Aberto:</label>
+                    <select id="selecionar-evento" name="selecionar-evento" required>
                         <option value="">-- Selecione um evento --</option>
                         <option value="evento1">Evento 1</option>
                         <option value="evento2">Evento 2</option>
-                        <!-- Adicione mais opções de eventos abertos aqui -->
                     </select>
                 </div>
 

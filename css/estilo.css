@@ -95,49 +95,8 @@ section img {
     border-radius: 5px;
 }
 
-/* Vantagens */
-#vantagens {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#vantagens ul {
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    list-style-type: none;
-}
-
-#vantagens ul li {
-    display: flex;
-    align-items: center;
-    margin: 5px 10px;
-    position: relative;
-}
-
-#vantagens li {
-    width: calc(50% - 10px);
-    margin: 5px 0;
-    display: flex;
-    flex-direction: column;
-}
-
-#vantagens li h3 {
-    color: #000000;
-    margin: 0;
-}
-
-#vantagens li p {
-    color: #000000;
-    margin-top: 5px;
-}
-
 /* Vantagens e Funcionalidades */
-#vantagens,
-#funcionalidades {
+.quadros {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -182,25 +141,26 @@ footer {
 }
 
 /* Ícone do LinkedIn */
-.linkedin-icon i {
+
+a.linkedin-icon i {
     font-size: 48px;
     color: #0A66C2;
     transition: color 0.3s;
-    padding: 5px;
+    margin-right: 10px;
 }
 
-.linkedin-icon i:hover {
+a.linkedin-icon i:hover {
     color: #004182;
 }
 
-/* Ícone do Github */
-a i.fa-github {
+/* Ícone do GitHub */
+a.github-icon i {
     font-size: 48px;
     color: #333;
     transition: color 0.3s;
 }
 
-a i.fa-github:hover {
+a.github-icon i:hover {
     color: #000;
 }
 
@@ -246,7 +206,7 @@ button:hover {
     margin: 5px 0;
 }
 
-/* Estilos adicionais para o formulário */
+/* Formulário */
 .grupo-formulario {
     display: flex;
     flex-direction: column;
@@ -256,8 +216,6 @@ button:hover {
 label {
     margin-bottom: 5px;
 }
-
-/* Estilos de borda comuns */
 
 select,
 textarea {
@@ -269,17 +227,6 @@ textarea {
 
 textarea {
     height: 150px;
-}
-
-/* Botões de função */
-.botao-funcao {
-    background-color: #B22222;
-    color: white;
-    transition: background-color 0.3s;
-}
-
-.botao-funcao:hover {
-    background-color: #8B0000;
 }
 
 /* Responsividade */
