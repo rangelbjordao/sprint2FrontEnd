@@ -1,10 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
+// Formatacao data
+
+document.addEventListener('DOMContentLoaded', function () {
     const eventDateInput = document.getElementById('event-date');
 
-    eventDateInput.addEventListener('input', function(e) {
-        let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não é dígito
+    eventDateInput.addEventListener('input', function (e) {
+        let value = e.target.value.replace(/\D/g, '');
 
-        // Formata a entrada
         if (value.length >= 2) {
             value = value.slice(0, 2) + '/' + value.slice(2);
         }
@@ -12,6 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
             value = value.slice(0, 5) + '/' + value.slice(5, 9);
         }
 
-        e.target.value = value; // Atualiza o campo de entrada com a nova formatação
+        e.target.value = value;
     });
 });

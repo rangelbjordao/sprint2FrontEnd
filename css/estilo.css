@@ -193,6 +193,18 @@ footer {
     color: #004182;
 }
 
+/* Ícone do Github */
+a i.fa-github {
+    font-size: 48px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+a i.fa-github:hover {
+    color: #000;
+}
+
+
 /* Botões */
 button {
     background-color: #B22222;
