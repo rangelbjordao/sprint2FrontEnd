@@ -185,6 +185,14 @@ button:hover {
     border-color: #555;
 }
 
+a button {
+    text-decoration: none;
+}
+
+a button:hover {
+    text-decoration: underline;
+}
+
 .evento {
     background-color: white;
     color: #000000;
