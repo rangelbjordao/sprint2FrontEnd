@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const eventDateInput = document.getElementById('data-evento'); // Altere aqui para 'data-evento'
+    const eventDateInput = document.getElementById('data-evento');
 
     eventDateInput.addEventListener('input', function (e) {
         let value = e.target.value.replace(/\D/g, '');
